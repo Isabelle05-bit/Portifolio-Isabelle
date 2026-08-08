@@ -1,0 +1,463 @@
+
+body{
+
+  background-color: #F7F6F3;
+  font-family: "Inter", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  h1, h2, h3, h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  }
+
+  /* Código */
+  code, pre {
+  font-family: "JetBrains Mono", monospace;
+  }
+}
+/* Inicio */
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64x;
+  align-items: center;
+}
+.hero h1 {
+  margin-left: 10px;
+  font-size: clamp(64px, 9vw, 130px);   /* mínimo 64px, cresce com a tela (9vw), máximo 130px */
+  line-height: 0.95;       /* aproxima as linhas */
+  letter-spacing: -3px;    /* aperta as letras (visual editorial) */
+}
+.hero h2{
+  margin: 25px;
+}
+
+.hero p{
+  margin: 50px;
+  color: #362c19;
+}
+
+/* Sobre */
+.about{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 64x;
+  align-items: center;
+  min-height: 400px;
+}
+
+.about h1{
+  font-size: clamp(32px, 9vw, 64px);  
+  line-height: 0.95;       /* aproxima as linhas */
+  letter-spacing: -3px;    /* aperta as letras (visual editorial) */
+}
+
+.header{
+  margin-left: 50px;
+}
+.eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;   /* tudo em maiúscula */
+  letter-spacing: 6px;         /* espaço largo entre letras */
+  font-size: 16px;
+  color: #5a5a5a;
+  
+}
+
+/* Botões */
+.actions {
+  margin: 50px;
+  display: flex;   /* coloca os dois lado a lado */
+  gap: 16px;       /* espaço entre eles */
+}
+
+
+
+.btn {
+  padding: 16px 28px;        /* tamanho interno do botão */
+  border-radius: 10px;       /* cantos arredondados */
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;     /* tira o sublinhado se for <a> */
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background: #3f5036;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #2d3723;
+}
+
+.btn-secundary{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background:  #fff;
+  color:#344029;
+  text-decoration: none;
+}
+
+.btn-secundary:hover{
+  background-color: #3f5036;
+  color: #fff;
+}
+
+
+.btn-ghost {
+  background: transparent;   /* fundo vazio */
+  border-color: #d6d2c8;     /* só a borda cinza */
+  color: #1a1a1a;
+}
+/* Linha de divisão */
+hr {
+  border: none;              /* remove o estilo padrão feio */
+  border-top: 1px solid #e3e0d8;  /* linha fina e clara */
+  margin: 24px 0;            /* espaço acima e abaixo */
+}
+.linha{
+
+  width:100%;
+
+  height:2px;
+
+  margin:0px 0 0px;
+
+  background:#D9C5A1;
+
+}
+/* Stack técnica */
+.stack{
+  align-items: center;
+  margin: 50px;
+  min-height: 200px;
+}
+
+/* Cards de projetos */
+.projetos{
+  align-items: center;
+  margin: 50px;
+  min-height: 200px;
+}
+
+.cards{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+      
+}
+   
+.cardStack{
+
+  align-items: center;
+  width:320px;
+
+  background:white;
+
+  padding-top: 1px;
+  padding: 20px;
+
+  border-radius:20px;
+
+  box-shadow:0px 8px 20px rgba(0,0,0,.08);
+
+}
+
+.cardProjeto{
+
+  align-items: center;
+  width:320px;
+  height:220px;
+
+  background:white;
+
+  padding-top: 1px;
+  padding: 20px;
+
+  border-radius:20px;
+
+  box-shadow:0px 8px 20px rgba(0,0,0,.08);
+
+}
+.cardProjetoMec{
+  width:320px;
+  height:420px;
+
+  background:white;
+
+  padding-top: 1px;
+  padding: 20px;
+
+  border-radius:20px;
+
+  box-shadow:0px 8px 20px rgba(0,0,0,.08);
+}
+
+.imgMecatronica{
+
+  width: 100%;
+  height: 280px;
+
+  margin: 20px auto;
+
+  background-image: url("../imagens/TCCMecatronicaI.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+/* Contato */
+
+footer{
+  min-height: 400px;
+  background-color: #556B5D;
+}
+
+footer h1{
+  padding-top: 80px;
+  margin-left: 50px;
+  color:#F7F6F3 ;
+}
+
+footer p{
+  margin: 0;
+  color:#F7F6F3 ;
+}
+
+footer h3{
+  padding-top: 80px;
+  margin-left: 50px;
+  color:#F7F6F3 ;
+}
+
+/* Icones */
+
+.fa-phone,
+.fa-linkedin,
+.fa-github,
+.fa-envelope{
+  font-size: 40px;
+  color: #F7F6F3;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.contato-item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contato-item a{
+  color: #F7F6F3;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contato-item a:hover{
+  color: #d8d6d3;
+  text-decoration: underline;
+}
+
+/* telas de Projetos */
+
+.projetoTitulo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.projetoTitulo h1 {
+  margin-left: 10px;
+  font-size: clamp(32px, 9vw, 65px);   /* mínimo 64px, cresce com a tela (9vw), máximo 130px */
+  line-height: 0.95;       /* aproxima as linhas */
+  letter-spacing: -3px;    /* aperta as letras (visual editorial) */
+}
+.projetoTitulo h2{
+  margin: 25px;
+}
+.projetoTitulo p{
+  margin-left: 50px;
+}
+.meca{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.meca video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+
+  transform: translate(-50%, -50%);
+}
+
+.conteudo{
+  position: relative;
+  z-index: 1;
+}
+
+.descricao{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 64x;
+  align-items: center;
+  min-height: 400px;
+}
+
+.descricao h1{
+  font-size: clamp(32px, 9vw, 64px);
+  line-height: 0.95;       /* aproxima as linhas */
+  letter-spacing: -3px;    /* aperta as letras (visual editorial) */
+}
+
+/* Responsivo (mobile/tablet) */
+
+@media (max-width: 900px) {
+  .hero,
+  .about,
+  .descricao,
+  .projetoTitulo {
+    grid-template-columns: 1fr;
+  }
+
+  .about,
+  .descricao {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 24px;
+  }
+
+  .hero h1 {
+    margin-left: 0;
+  }
+
+  .hero h2 {
+    margin: 16px 24px 0;
+  }
+
+  .hero p {
+    margin: 16px 24px;
+  }
+
+  .actions {
+    margin: 24px;
+    flex-wrap: wrap;
+  }
+
+  .about {
+    margin: 24px;
+    gap: 24px;
+  }
+
+  .stack {
+    margin: 24px;
+  }
+
+  .projetos {
+    margin: 24px;
+  }
+
+  .cards {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .cardStack,
+  .cardProjeto,
+  .cardProjetoMec {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .descricao {
+    margin: 24px;
+    gap: 24px;
+  }
+
+  .projetoTitulo {
+    gap: 24px;
+  }
+
+  .projetoTitulo h1 {
+    margin-left: 0;
+  }
+
+  .projetoTitulo p {
+    margin-left: 24px;
+  }
+
+  .meca {
+    height: 75vh;
+  }
+
+  footer h1,
+  footer h3 {
+    margin-left: 24px;
+    padding-top: 48px;
+  }
+
+  .fa-phone,
+  .fa-linkedin,
+  .fa-github,
+  .fa-envelope {
+    margin-left: 24px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .about h1,
+  .descricao h1 {
+    letter-spacing: -1px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secundary {
+    text-align: center;
+    width: 100%;
+  }
+
+  .meca {
+    height: 86vh;
+  }
+
+  .contato-item a {
+    font-size: 18px;
+  }
+}
